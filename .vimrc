@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'mattn/emmet-vim'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tomtom/tcomment_vim'
 
 " Initialize plugin system
@@ -19,6 +20,7 @@ colorscheme solarized
 " set autoindent
 set background=light
 set backspace=indent,eol,start
+set backupcopy=yes
 set encoding=utf-8
 set expandtab
 set fileformats=unix,dos,mac
