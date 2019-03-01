@@ -9,6 +9,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'altercation/vim-colors-solarized'
 Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
