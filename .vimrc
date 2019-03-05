@@ -14,6 +14,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'Quramy/tsuquyomi'
 Plug 'tomtom/tcomment_vim'
 
 " Initialize plugin system
@@ -36,3 +37,6 @@ set softtabstop=2
 set smartindent
 set tabstop=2
 syntax enable
+
+autocmd BufNewFile,BufRead *.ts set filetype=typescript
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript
