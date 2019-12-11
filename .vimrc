@@ -22,7 +22,6 @@ Plug 'tomtom/tcomment_vim'
 call plug#end()
 
 colorscheme solarized
-" set autoindent
 set background=light
 set backspace=indent,eol,start
 set backupcopy=yes
@@ -39,6 +38,13 @@ set smartindent
 set tabstop=2
 syntax enable
 
+" Tsuquyomi
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+
+" Typescript Syntax for Vim
 autocmd BufNewFile,BufRead *.ts set filetype=typescript
 autocmd BufNewFile,BufRead *.tsx set filetype=typescript
-autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+
+" vim-prettier
+" let g:prettier#autoformat = 0
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
